@@ -2,8 +2,8 @@
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-const char* ssid = "BLACKOUT";
-const char* password = "marinh@123";
+const char* ssid = "Name Your wifi Network";
+const char* password = "your wifi password";
 ESP8266WebServer server(80);
 String page = "";
 int LEDPin = 13;
@@ -16,7 +16,7 @@ IPAddress subnet(255, 255, 255, 0);
 
 void setup() {
   // put your setup code here, to run once:
-  page = "<h1>Desligamento Remoto RECIM</h1><p><a href=\"TURNOn\"><button>OFF</button></a>&nbsp;<a href=\"TURNOff\"><button>ON</button></a></p>";
+  page = "<h1>Desligamento Remoto </h1><p><a href=\"TURNOn\"><button>OFF</button></a>&nbsp;<a href=\"TURNOff\"><button>ON</button></a></p>";
   //make the LED pin output and initially turned off
   pinMode(LEDPin, OUTPUT);
   digitalWrite(LEDPin, LOW);
