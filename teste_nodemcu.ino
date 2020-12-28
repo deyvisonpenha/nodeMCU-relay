@@ -6,7 +6,7 @@ const char* ssid = "Name Your wifi Network";
 const char* password = "your wifi password";
 ESP8266WebServer server(80);
 String page = "";
-int LEDPin = 13;
+int LEDPin = 13; // it is D7 in NodeMCU
 
 // Set your Static IP address
 IPAddress local_IP(172, 16, 100, 54);
